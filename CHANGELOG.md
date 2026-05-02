@@ -1,5 +1,17 @@
 # Changelog
 
+## Dependency Setup (2026-05-02)
+
+### Packaging
+- Added [requirements.txt](requirements.txt) so the project dependencies can be installed with a single command using `pip install -r requirements.txt`.
+
+### Notebook Bootstrap
+- Added an auto-install setup cell near the top of the notebook so missing Python packages are installed the first time the notebook runs in a fresh environment.
+- The setup cell checks for `numpy`, `pandas`, `matplotlib`, `seaborn`, and `scikit-learn` before installing anything.
+
+### Environment Guidance
+- Recommended using a virtual environment for local runs so the notebook dependencies stay isolated from system Python.
+
 ## Notebook Enhancements (2026-05-01)
 
 ### Bug Fixes

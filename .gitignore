@@ -1,1 +1,4 @@
 *.csv
+airbnb_env/
+.venv/
+venv/
